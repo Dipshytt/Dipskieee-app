@@ -2,9 +2,7 @@ import streamlit as st
 
 st.title("Nadhif Safaraz Pranggana")
 st.write(
-    "NARRATOR: 
-
-(Black screen with text; The sound of buzzing bees can be heard) 
+    "NARRATOR:Black screen with text; The sound of buzzing bees can be heard) 
 According to all known laws 
 
 of aviation, 
