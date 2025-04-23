@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("gacorr999")
+st.title("Forum JB Narkoba Se-Bandung Raya")
 st.write(
-    "Dijamin gacor, Langsung wd"
+    "Tidak Enak Uang Kembali"
 )
