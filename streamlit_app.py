@@ -15,4 +15,4 @@ else:
 
 st.title("tes")
 
-st.text_input
+st.text_input("Masukan Nama:", value=0)
