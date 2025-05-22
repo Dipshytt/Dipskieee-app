@@ -35,8 +35,6 @@ nomor = st.number_input("Pilih angka random", value=0, step=1)
 berhasil = st.write("Kamu Menang")
 gagal = st.write("Coba Lagi")
 idle = st.write("ayo mulai")
-if nomor ==0:
-          st.print(idle)
 if nomor == 275:
   st.print(berhasil)
 
