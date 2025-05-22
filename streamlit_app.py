@@ -33,8 +33,8 @@ st.header("gacha")
 gacor = st.number_input("Pilih angka random", value=0, step=1)
 status = st.write("ayo mulai")
 if gacor == 275:
-  replace(status, "Gacor kang")
+  status.replace("ayo mulai", "Gacor kang")
 
 else:
-          replace(status, "coba lagi")
+          status.replace("ayo mulai", "coba lagi")
 
