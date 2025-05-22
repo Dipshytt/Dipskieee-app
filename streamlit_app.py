@@ -51,7 +51,7 @@ elif menu == "Halaman 4":
     skibidi = ("ayo coba lagi")
     slebew = ("Ayo Mulai")
 
-    berhasil = (nomor == 26 and nomor == 10)
+    berhasil = (nomor == 26)
     idle = (nomor == 0)
     gagal = (nomor != 'berhasil' and nomor != 0)
 
