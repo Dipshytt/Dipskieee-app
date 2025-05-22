@@ -13,10 +13,6 @@ if menu == "Home":
     st.write("ayang aku 🥰🥰")
 
 elif menu == "Halaman 1":
-    st.title("Halaman 1")
-    st.write("Ini konten halaman pertama.")
-
-    st.write("---")
     st.header("Aplikasi Ganjil Genap")
           
     angka = st.number_input("Tulis sebuah angka:", value=0, step=1)
@@ -26,9 +22,6 @@ elif menu == "Halaman 1":
       st.write(f"{angka} adalah Bilangan Ganjil")
 
 elif menu == "Halaman 2":
-    st.title("Halaman 2")
-    st.write("Ini konten halaman kedua.")
-    st.write("---")
     st.header("Aplikasi Ganjil Genap")
           
     angka = st.number_input("Tulis sebuah angka:", value=0, step=1)
@@ -38,7 +31,6 @@ elif menu == "Halaman 2":
       st.write(f"{angka} adalah Bilangan Ganjil")
         
 elif menu == "Halaman 3":
-    st.write("---")
     st.header("To Do List")
     mantap = st.checkbox("Ngerjain tugas")
     mantap = st.checkbox("ngedate sama ayang")
@@ -49,8 +41,8 @@ elif menu == "Halaman 3":
               st.write("mantap")
     else:
       pass
+        
 elif menu == "Halaman 4":
-    st.write("---")
     st.header("gacha")
 
     nomor = st.number_input("Pilih angka random", value=0, step=1)
