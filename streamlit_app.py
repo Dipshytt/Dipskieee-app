@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Sidebar untuk navigasi
-menu = st.sidebar.selectbox("Pilih Halaman", ["Home", "Halaman 1", "Halaman 2", "Halaman 3", "Halaman 4"])
+menu = st.sidebar.selectbox("Pilih Halaman", ["Home", "Aplikasi Ganjil Genap", "To Do List", "Games"])
 
 # Tampilkan konten berdasarkan pilihan
 if menu == "Home":
@@ -12,7 +12,7 @@ if menu == "Home":
     st.image("IMG_20250421_152717_503.jpg", width=2000)
     st.write("ayang aku 🥰🥰")
 
-elif menu == "Halaman 1":
+elif menu == "Aplikasi Ganjil Genap":
     st.header("Aplikasi Ganjil Genap")
           
     angka = st.number_input("Tulis sebuah angka:", value=0, step=1)
@@ -21,16 +21,7 @@ elif menu == "Halaman 1":
     else:
       st.write(f"{angka} adalah Bilangan Ganjil")
 
-elif menu == "Halaman 2":
-    st.header("Aplikasi Ganjil Genap")
-          
-    angka = st.number_input("Tulis sebuah angka:", value=0, step=1)
-    if (angka % 2) ==0:
-      st.write(f"{angka} adalah Bilangan Genap")
-    else:
-      st.write(f"{angka} adalah Bilangan Ganjil")
-        
-elif menu == "Halaman 3":
+elif menu == "To Do List":
     st.header("To Do List")
     mantap = st.checkbox("Ngerjain tugas")
     mantap = st.checkbox("ngedate sama ayang")
@@ -42,7 +33,7 @@ elif menu == "Halaman 3":
     else:
       pass
         
-elif menu == "Halaman 4":
+elif menu == "Games":
     st.header("gacha")
 
     nomor = st.number_input("Pilih angka random", value=0, step=1)
