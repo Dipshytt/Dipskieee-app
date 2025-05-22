@@ -27,3 +27,6 @@ if mantap:
           st.write("mantap")
 else:
   pass
+
+st.write("---")
+st.number_input("Pilih angka dari 1 - 100", 1, 100)
