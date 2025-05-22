@@ -15,6 +15,7 @@ else:
   st.write(f"{angka} adalah Bilangan Ganjil")
 
 st.write("---")
+
 st.header("To Do List")
 mantap = st.checkbox("Ngerjain tugas")
 if mantap:
