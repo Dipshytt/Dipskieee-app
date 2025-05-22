@@ -33,7 +33,5 @@ st.header("gacha")
 gacor = st.number_input("Pilih angka random")
 if gacor is 275:
   st.write("gacor kang")
-if gacor is 0:
-          st.write("ayo pilih")
 else:
   st.write("coba lagi")
