@@ -58,8 +58,9 @@ elif menu == "Halaman 4":
 
    if berhasil:
     st.write(sigma)
-elif idle:
+   elif idle:
     st.write(slebew)
-else:
+   else:
     st.write(skibidi)
+
 
