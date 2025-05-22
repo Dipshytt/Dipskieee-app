@@ -53,12 +53,13 @@ elif menu == "Halaman 4":
 
     berhasil = (nomor == 26)
     idle = (nomor == 0)
-    gagal = (nomor != 26)
-    gagal = (nomor != 0)
+    gagal = (nomor != 26 and nomor != 0)
 
-    if berhasil:
-          st.write(sigma)
-    if gagal:
-          st.write(skibidi)
-    if idle:
-          st.write(slebew)
+
+   if berhasil:
+    st.write(sigma)
+elif idle:
+    st.write(slebew)
+else:
+    st.write(skibidi)
+
