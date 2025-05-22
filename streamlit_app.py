@@ -20,5 +20,5 @@ st.header("To Do List")
 mantap = st.checkbox("Ngerjain tugas")
 if mantap:
           st.write("mantap")
-if else:
+else:
   pass
