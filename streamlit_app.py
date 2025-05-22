@@ -7,7 +7,9 @@ st.set_page_config(
 
 
 st.title("Nadhif Safaraz Pranggana")
-st.sidebar.success("Select -> page above")
+st.sidebar.success("Pilih Halaman di Atas")
+
+
 st.write( "Jika ingin keinginan terwujud, perbanyaklah bersujud 🤘😝🤘")
 st.write("[Coba Klik](https://youtu.be/2Iyj3CBsxTk)")
 st.image("IMG_20250421_152717_503.jpg", width=2000)
