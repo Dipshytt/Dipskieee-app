@@ -4,7 +4,7 @@ st.title("Nadhif Safaraz Pranggana")
 st.write( "Jika ingin keinginan terwujud, perbanyaklah bersujud 🤘😝🤘")
 
 st.image("IMG_20250313_194334_316.jpg", width=2000)
-
+st.markdown("---")
 angka = st.number_input("Tulis sebuah angka:", value=0, step=1)
 if (angka % 2) ==0:
   st.write(f"{angka} adalah Bilangan Genap")
