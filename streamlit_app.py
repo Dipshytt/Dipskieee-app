@@ -36,7 +36,7 @@ elif menu == "To Do List":
 elif menu == "Games":
     st.header("Gacha")
 
-    nomor = st.number_input("Pilih angka random", value=0, step=1)
+    nomor = st.number_input("Pilih angka random antara 1-100", value=0, step=1)
 
     sigma = ("selamat!!")
     skibidi = ("ayo coba lagi")
