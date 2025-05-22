@@ -32,11 +32,11 @@ st.header("gacha")
 
 nomor = st.number_input("Pilih angka random", value=0, step=1)
 
-sigma = ("gacor kang")
+sigma = ("selamat!!")
 skibidi = ("ayo coba lagi")
 
-berhasil = (nomor == 1)
-gagal = (nomor != 1)
+berhasil = (nomor == 261008)
+gagal = (nomor != 261008)
 
 if berhasil:
           st.write(sigma)
