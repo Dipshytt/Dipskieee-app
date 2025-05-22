@@ -29,4 +29,9 @@ else:
   pass
 
 st.write("---")
-st.number_input("Pilih angka dari 1 - 100", 1, 100)
+st.header("gacha")
+gacor = st.number_input("Pilih angka random")
+if (gacor = 275)
+  st.write("gacor kang")
+else:
+  st.write("coba lagi")
