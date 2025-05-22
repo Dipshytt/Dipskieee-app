@@ -32,12 +32,16 @@ st.header("gacha")
 
 nomor = st.number_input("Pilih angka random", value=0, step=1)
 
-def replace_text():
-    st.session_state["text"] = status.replace(berhasil, gagal)
+sigma = ("gacor kang")
+skibidi = ("ayo coba lagi")
 
-if "text" not in st.session_state:
-    st.session_state["text"] = ""
-status = st.write("Ayo mulai")
-berhasil = st.write("gacor kang")
-gagal = st.write("coba lagi")
-button = st.button('Gasskan', on_click=replace_text)
+berhasil = (nomor == 1)
+gagal = (nomor != 1)
+
+if berhasil:
+          st.write(sigma)
+if gagal:
+          st.write(skibidi)
+else:
+          pass
+
