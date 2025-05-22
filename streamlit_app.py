@@ -13,6 +13,8 @@ if menu == "Home":
     ayang = st.text_input("nama orang diatas siapa 🫵😠")
     if ayang == "Eunchae":
                           st.write("bener 🥰")
+    elif ayang == "":
+        st.write("Tebak")
     else:
                           st.write("salah 😡")
 
