@@ -37,12 +37,13 @@ skibidi = ("ayo coba lagi")
 slebew = ("Ayo Mulai")
 
 berhasil = (nomor == 261008)
-gagal = (nomor != 261008)
+gagal = (nomor != 261008, 0)
+idle = (nomor == 0)
 
 if berhasil:
           st.write(sigma)
 if gagal:
           st.write(skibidi)
-else:
+if idle:
           st.write(slebew)
 
