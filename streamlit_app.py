@@ -36,5 +36,5 @@ if gacor == 275:
   status = status.replace("ayo mulai", "Gacor kang")
 
 else:
-          status = status.replace ("ayo mulai", "coba lagi")
+  status = status.replace("ayo mulai", "coba lagi")
 
