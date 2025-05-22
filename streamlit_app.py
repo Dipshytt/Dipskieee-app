@@ -32,13 +32,12 @@ st.header("gacha")
 
 nomor = st.number_input("Pilih angka random", value=0, step=1)
 
+def replace_text():
+    st.session_state["text"] = text1.replace(before, after)
+
 if "text" not in st.session_state:
     st.session_state["text"] = ""
 text1 = st.text_area('Text : ', st.session_state["text"])
 before = st.text_input('Before')
 after = st.text_input('After')
-button = st.button('Button')
-
-if button:
-    st.session_state["text"] = text1.replace(before, after)
-
+button = st.button('Button', on_click=replace_text)
