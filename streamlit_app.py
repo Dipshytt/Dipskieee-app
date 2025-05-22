@@ -17,7 +17,8 @@ else:
 st.write("---")
 
 st.header("To Do List")
-mantap = st.checkbox("Ngerjain tugas")
+mantap = st.checkbox("Ngerjain tugas") st.checkbox("mandi")
+
 if mantap:
           st.write("mantap")
 else:
