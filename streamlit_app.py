@@ -32,9 +32,9 @@ st.header("gacha")
 
 nomor = st.number_input("Pilih angka random", value=0, step=1)
 
-berhasil = st.write("Kamu Menang")
-gagal = st.write("Coba Lagi")
-idle = st.write("ayo mulai")
+berhasil = st.text_input("Kamu Menang")
+gagal = st.text_input("Coba Lagi")
+idle = st.text_input("ayo mulai")
 if nomor == 275:
   st.print(berhasil)
 
