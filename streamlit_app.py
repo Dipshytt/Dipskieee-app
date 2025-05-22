@@ -3,7 +3,7 @@ import streamlit as st
 st.title("Nadhif Safaraz Pranggana")
 st.write( "Jika ingin keinginan terwujud, perbanyaklah bersujud 🤘😝🤘")
 
-st.image("IMG_20250313_194334_316.jpg", width=2000)
+st.image("IMG_20250421_152717_503.jpg", width=2000)
 st.markdown("---")
 st.header("Aplikasi Ganjil Genap")
           
