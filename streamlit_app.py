@@ -34,6 +34,7 @@ nomor = st.number_input("Pilih angka random", value=0, step=1)
 
 sigma = ("selamat!!")
 skibidi = ("ayo coba lagi")
+slebew = ("Ayo Mulai")
 
 berhasil = (nomor == 261008)
 gagal = (nomor != 261008)
@@ -43,5 +44,5 @@ if berhasil:
 if gagal:
           st.write(skibidi)
 else:
-          pass
+          st.write(slebew)
 
