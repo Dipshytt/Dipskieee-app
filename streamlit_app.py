@@ -17,10 +17,7 @@ else:
 st.write("---")
 
 st.header("To Do List")
-mantap = st.checkbox("Ngerjain tugas") 
-mantap = st.checkbox("ngedate sama bubub")
-mantap = st.checkbox("menyelamatkan dunia")
-mantap = st.checkbox("menjadi presiden Indonesia")
+mantap = st.checkbox("Ngerjain tugas"), st.checkbox("ngedate sama bubub"), st.checkbox("menyelamatkan dunia"), st.checkbox("menjadi presiden Indonesia")
 
 
 if mantap:
@@ -32,6 +29,7 @@ st.write("---")
 st.header("gacha")
 gacor = st.number_input("Pilih angka random", value=0, step=1)
 st.write("ayo mulai")
+
 if gacor == 275:
   st.replace("ayo mulai", "gacor kang")
 
