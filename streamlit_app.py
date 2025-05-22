@@ -51,9 +51,9 @@ elif menu == "Halaman 4":
     skibidi = ("ayo coba lagi")
     slebew = ("Ayo Mulai")
 
-    berhasil = (nomor == 26 and nomor == 10 and nomor == 2008)
+    berhasil = (nomor == 26)
     idle = (nomor == 0)
-    gagal = (nomor != idle and nomor != berhasil)
+    gagal = (nomor != berhasil and nomor != 0)
 
     if berhasil:
         st.write(sigma)
