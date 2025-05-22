@@ -11,7 +11,7 @@ if menu == "Home":
     st.write("[Coba Klik](https://youtu.be/2Iyj3CBsxTk)")
     st.image("IMG_20250421_152717_503.jpg", width=2000)
     ayang = st.text_input("nama orang diatas siapa 🫵😠")
-    if ayang == "eunchae" and ayang == "Eunchae":
+    if ayang == "Eunchae":
                           st.write("bener 🥰")
     else:
                           st.write("salah 😡")
