@@ -34,7 +34,7 @@ elif menu == "To Do List":
       pass
         
 elif menu == "Games":
-    st.header("gacha")
+    st.header("Gacha")
 
     nomor = st.number_input("Pilih angka random", value=0, step=1)
 
