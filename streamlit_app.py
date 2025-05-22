@@ -34,7 +34,7 @@ gacor = st.number_input("Pilih angka random", value=0, step=1)
 if gacor == 275:
   st.write("gacor kang")
 
-if gacor !=275 :
+if gacor !=275:
           st.write("coba lagi")
-else:
+if gacor ==0:
   st.write("ayo mulai")
