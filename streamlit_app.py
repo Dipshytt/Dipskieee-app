@@ -34,8 +34,8 @@ gacor = st.number_input("Pilih angka random", value=0, step=1)
 st.write("ayo mulai")
 status = "ayo mulai"
 if gacor == 275:
-  status = st.status.replace("ayo mulai", "gacor kang")
+  status = status.replace("ayo mulai", "gacor kang")
 
 else:
-  status = st.status.replace("ayo mulai" or "gacor kang", "coba lagi")
+  status = status.replace("ayo mulai" or "gacor kang", "coba lagi")
 
