@@ -53,7 +53,7 @@ elif menu == "Halaman 4":
 
     berhasil = (nomor == 26)
     idle = (nomor == 0)
-    gagal = (nomor != berhasil and nomor != 0)
+    gagal = (nomor != 'berhasil' and nomor != 0)
 
     if berhasil:
         st.write(sigma)
