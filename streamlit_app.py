@@ -1,8 +1,6 @@
 import streamlit as st
 
-tab1, tab2 = st.tabs(["Tab 1", "Tab2"])
-tab1.write("this is tab 1")
-tab2.write("this is tab 2")
+tab1, tab2, tab3, tab4 = st.tabs(["Tab 1", "Tab 2", "Tab 3", "Tab 4"])
 
 with tab1:
     st.title("Halaman Utama")
@@ -29,7 +27,7 @@ with tab2:
     else:
       st.write(f"{angka} adalah Bilangan Ganjil")
 
-elif menu == "To Do List":
+with tab3:
     st.header("To Do List")
     mantap = st.checkbox("Ngerjain tugas")
     mantap = st.checkbox("ngedate sama ayang")
@@ -41,7 +39,7 @@ elif menu == "To Do List":
     else:
       pass
         
-elif menu == "Games":
+with tab4:
     st.header("Gacha")
 
     nomor = st.number_input("Pilih angka random antara 1-100", value=0, step=1, min_value=0, max_value=100)
