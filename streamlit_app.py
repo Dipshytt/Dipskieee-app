@@ -1,9 +1,7 @@
 import streamlit as st
 
-# Sidebar untuk navigasi
 menu = st.sidebar.selectbox("Pilih Halaman", ["Home", "Aplikasi Ganjil Genap", "To Do List", "Games"])
 
-# Tampilkan konten berdasarkan pilihan
 if menu == "Home":
     st.title("Halaman Utama")
     st.write("Selamat datang di halaman utama.")
@@ -17,7 +15,9 @@ if menu == "Home":
         st.write("Tebak")
     else:
                           st.write("salah 😡")
+
     st.audio_input("Rekam suara:")
+    
 elif menu == "Aplikasi Ganjil Genap":
     st.header("Aplikasi Ganjil Genap")
           
