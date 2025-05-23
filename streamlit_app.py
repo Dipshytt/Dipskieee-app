@@ -16,7 +16,7 @@ if menu == "Home":
     else:
                           st.write("salah 😡")
 
-    st.audio_input("Rekam suara:")
+    st.image_input
     
 elif menu == "Aplikasi Ganjil Genap":
     st.header("Aplikasi Ganjil Genap")
