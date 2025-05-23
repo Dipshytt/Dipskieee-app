@@ -2,6 +2,10 @@ import streamlit as st
 
 menu = st.sidebar.selectbox("Pilih Halaman", ["Home", "Aplikasi Ganjil Genap", "To Do List", "Games"])
 
+tab1, tab2 = st.tabs(["Tab 1", "Tab2"])
+tab1.write("this is tab 1")
+tab2.write("this is tab 2")
+
 if menu == "Home":
     st.title("Halaman Utama")
     st.write("Selamat datang di halaman utama.")
