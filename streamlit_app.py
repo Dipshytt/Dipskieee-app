@@ -52,6 +52,7 @@ with tab4:
 
     if berhasil:
         st.write(sigma)
+        st.image("", width=500)
     elif gagal:
         st.write(skibidi)
     elif idle:
