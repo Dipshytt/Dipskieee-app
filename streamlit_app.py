@@ -1,26 +1,24 @@
 import streamlit as st
 
-menu = st.sidebar.selectbox("Pilih Halaman", ["Home", "Aplikasi Ganjil Genap", "To Do List", "Games"])
-
 tab1, tab2 = st.tabs(["Tab 1", "Tab2"])
 tab1.write("this is tab 1")
 tab2.write("this is tab 2")
 
-if menu == "Home":
-    st.title("Halaman Utama")
-    st.write("Selamat datang di halaman utama.")
-    st.write( "Jika ingin keinginan terwujud, perbanyaklah bersujud 🤘😝🤘")
-    st.write("[Coba Klik](https://youtu.be/2Iyj3CBsxTk)")
-    st.image("IMG_20250421_152717_503.jpg", width=2000)
-    ayang = st.text_input("nama orang diatas siapa 🫵😠")
-    if ayang == "Eunchae":
-                          st.write("bener 🥰")
-    elif ayang == "":
-        st.write("Tebak")
-    else:
-                          st.write("salah 😡")
 
-    st.image_input
+    tab1.title("Halaman Utama")
+    tab1.write("Selamat datang di halaman utama.")
+    tab1.write( "Jika ingin keinginan terwujud, perbanyaklah bersujud 🤘😝🤘")
+    tab1.write("[Coba Klik](https://youtu.be/2Iyj3CBsxTk)")
+    tab1.image("IMG_20250421_152717_503.jpg", width=2000)
+    ayang = tab1.text_input("nama orang diatas siapa 🫵😠")
+    if ayang == "Eunchae":
+                          tab1.write("bener 🥰")
+    elif ayang == "":
+        tab1.write("Tebak")
+    else:
+                          tab1.write("salah 😡")
+
+    tab1.image_input
     
 elif menu == "Aplikasi Ganjil Genap":
     st.header("Aplikasi Ganjil Genap")
