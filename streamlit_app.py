@@ -66,4 +66,5 @@ with tab5:
     col1, col2 = st.columns(2)
     with col1:
         jepretan = (st.camera_input("Ambil Foto Terbaikmu"))
-          
+    with col2:
+        st.image(jepretan)
