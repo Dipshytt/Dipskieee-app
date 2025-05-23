@@ -16,8 +16,6 @@ with tab1:
     else:
                           st.write("salah 😡")
 
-    st.image_input
-    
 with tab2:
     st.header("Aplikasi Ganjil Genap")
           
