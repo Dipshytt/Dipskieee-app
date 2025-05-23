@@ -1,6 +1,6 @@
 import streamlit as st
 
-tab1, tab2, tab3, tab4 = st.tabs(["Home", "Ganjil/Genap", "TDL", "Games"])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["Home", "Ganjil/Genap", "TDL", "Games", "TESTING"])
 
 with tab1:
     st.title("Halaman Utama")
@@ -59,3 +59,16 @@ with tab4:
         st.image("d-sad-depressed-person-rendering-frustrated-man-sitting-plastic-stool-white-people-man-character-51186816.webp", width=2500)
     elif idle:
         st.write(slebew)
+
+with tab5:
+    # Insert a chat message container.
+with st.chat_message("user"):
+    st.write("Hello 👋")
+    st.line_chart(np.random.randn(30, 3))
+
+# Display a chat input widget at the bottom of the app.
+st.chat_input("Say something")
+
+# Display a chat input widget inline.
+with st.container():
+    st.chat_input("Say something")
