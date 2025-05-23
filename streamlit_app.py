@@ -61,11 +61,5 @@ with tab4:
         st.write(slebew)
 
 with tab5:
-    st.header("Aplikasi Ganjil Genap")
+    st.header("TESTING")
           
-    angka = st.number_input("Tulis sebuah angka:", value=0, step=1)
-    if (angka % 2) ==0:
-      st.write(f"{angka} adalah Bilangan Genap")
-    else:
-      st.write(f"{angka} adalah Bilangan Ganjil")
-
