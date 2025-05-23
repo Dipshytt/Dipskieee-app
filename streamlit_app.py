@@ -62,22 +62,22 @@ with tab4:
 
 with tab5:
     
-st.title("💬 Chat App Sederhana")
+    st.title("💬 Chat App Sederhana")
 
-# Simpan riwayat chat dalam session state
-if "chat_history" not in st.session_state:
+    # Simpan riwayat chat dalam session state
+    if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
-user_input = st.text_input("Ketik pesan kamu:", key="user_input")
+    user_input = st.text_input("Ketik pesan kamu:", key="user_input")
 
-if st.button("Kirim"):
-    if user_input:
-        st.session_state.chat_history.append(("🧑 Kamu", user_input))
-        # Simulasi respon bot
-        response = f"Halo! Kamu bilang: {user_input}"
-        st.session_state.chat_history.append(("🤖 Bot", response))
-        st.session_state.user_input = ""  # Bersihkan input
+    if st.button("Kirim"):
+        if user_input:
+            st.session_state.chat_history.append(("🧑 Kamu", user_input))
+            # Simulasi respon bot
+            response = f"Halo! Kamu bilang: {user_input}"
+            st.session_state.chat_history.append(("🤖 Bot", response))
+            st.session_state.user_input = ""  # Bersihkan input
 
-# Tampilkan chat history
-for sender, msg in st.session_state.chat_history:
-    st.markdown(f"**{sender}:** {msg}")
+    # Tampilkan chat history
+    for sender, msg in st.session_state.chat_history:
+        st.markdown(f"**{sender}:** {msg}")
