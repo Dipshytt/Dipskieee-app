@@ -61,14 +61,24 @@ with tab4:
         st.write(slebew)
 
 with tab5:
-    # Insert a chat message container.
-with st.chat_message("user"):
-    st.write("Hello 👋")
-    st.line_chart(np.random.randn(30, 3))
+st.set_page_config(page_title="Chat App", layout="centered")
 
-# Display a chat input widget at the bottom of the app.
-st.chat_input("Say something")
+st.title("💬 Chat App Sederhana")
 
-# Display a chat input widget inline.
-with st.container():
-    st.chat_input("Say something")
+# Simpan riwayat chat dalam session state
+if "chat_history" not in st.session_state:
+    st.session_state.chat_history = []
+
+user_input = st.text_input("Ketik pesan kamu:", key="user_input")
+
+if st.button("Kirim"):
+    if user_input:
+        st.session_state.chat_history.append(("🧑 Kamu", user_input))
+        # Simulasi respon bot
+        response = f"Halo! Kamu bilang: {user_input}"
+        st.session_state.chat_history.append(("🤖 Bot", response))
+        st.session_state.user_input = ""  # Bersihkan input
+
+# Tampilkan chat history
+for sender, msg in st.session_state.chat_history:
+    st.markdown(f"**{sender}:** {msg}")
