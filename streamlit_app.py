@@ -1,5 +1,6 @@
 import streamlit as st
 
+samping = st.sidebar.radio("Pilih Halaman di atas", [tab1, tab2, tab3, tab4, tab5])
 tab1, tab2, tab3, tab4, tab5 = st.tabs(["Home", "Ganjil/Genap", "TDL", "Games", "TESTING"])
 
 with tab1:
