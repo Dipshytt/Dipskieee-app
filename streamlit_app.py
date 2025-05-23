@@ -1,6 +1,6 @@
 import streamlit as st
 
-tab1, tab2, tab3, tab4 = st.tabs(["Tab 1", "Tab 2", "Tab 3", "Tab 4"])
+tab1, tab2, tab3, tab4 = st.tabs(["Home", "Ganjil/Genap", "TDL", "Games"])
 
 with tab1:
     st.title("Halaman Utama")
