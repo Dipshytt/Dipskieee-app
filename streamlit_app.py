@@ -62,7 +62,7 @@ with tab4:
 
 with tab5:
     
-    st.title("💬 Chat App Sederhana")
+    st.write("💬 Chat App Sederhana")
 
     # Simpan riwayat chat dalam session state
     if "chat_history" not in st.session_state:
