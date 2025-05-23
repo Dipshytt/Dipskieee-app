@@ -63,5 +63,7 @@ with tab4:
 with tab5:
     st.title("TESTING")
 
-    st.bar_chart(df, horizontal=True)
+    col1, col2 = st.columns(2)
+    col1.write("This is column 1")
+    col2.write("This is column 2")
           
