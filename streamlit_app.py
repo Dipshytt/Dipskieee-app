@@ -17,7 +17,7 @@ with tab1:
                           st.write("salah 😡")
 
 with tab2:
-    st.header("Aplikasi Ganjil Genap")
+    st.title("Aplikasi Ganjil Genap")
           
     angka = st.number_input("Tulis sebuah angka:", value=0, step=1)
     if (angka % 2) ==0:
@@ -26,7 +26,7 @@ with tab2:
       st.write(f"{angka} adalah Bilangan Ganjil")
 
 with tab3:
-    st.header("To Do List")
+    st.title("To Do List")
     mantap1 = st.checkbox("Ngerjain tugas")
     mantap2 = st.checkbox("ngedate sama ayang")
     mantap3 = st.checkbox("menyelamatkan dunia")
@@ -39,7 +39,7 @@ with tab3:
       pass
         
 with tab4:
-    st.header("Gacha")
+    st.title("Gacha")
 
     nomor = st.number_input("Pilih angka random antara 1-100", value=0, step=1, min_value=0, max_value=100)
 
@@ -61,5 +61,5 @@ with tab4:
         st.write(slebew)
 
 with tab5:
-    st.header("TESTING")
+    st.title("TESTING")
           
