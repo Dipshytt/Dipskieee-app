@@ -33,6 +33,7 @@ with tab3:
         st.checkbox("menyelamatkan dunia"),
         st.checkbox("menjadi presiden Indonesia")
     )
+    
     if mantap:
               st.write("mantap")
     else:
