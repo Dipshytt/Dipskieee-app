@@ -52,8 +52,9 @@ with tab4:
 
     if berhasil:
         st.write(sigma)
-        st.image("", width=500)
+        st.image("31284410-3d-rendering-of-business-person-standing-with-correct-right-check-tick-mark-3d-illustration-of-human.jpg", width=500)
     elif gagal:
         st.write(skibidi)
+        st.image("d-sad-depressed-person-rendering-frustrated-man-sitting-plastic-stool-white-people-man-character-51186816.webp", width=500)
     elif idle:
         st.write(slebew)
