@@ -4,23 +4,23 @@ tab1, tab2 = st.tabs(["Tab 1", "Tab2"])
 tab1.write("this is tab 1")
 tab2.write("this is tab 2")
 
-
-    tab1.title("Halaman Utama")
-    tab1.write("Selamat datang di halaman utama.")
-    tab1.write( "Jika ingin keinginan terwujud, perbanyaklah bersujud 🤘😝🤘")
-    tab1.write("[Coba Klik](https://youtu.be/2Iyj3CBsxTk)")
-    tab1.image("IMG_20250421_152717_503.jpg", width=2000)
-    ayang = tab1.text_input("nama orang diatas siapa 🫵😠")
+with tab1:
+    st.title("Halaman Utama")
+    st.write("Selamat datang di halaman utama.")
+    st.write( "Jika ingin keinginan terwujud, perbanyaklah bersujud 🤘😝🤘")
+    st.write("[Coba Klik](https://youtu.be/2Iyj3CBsxTk)")
+    st.image("IMG_20250421_152717_503.jpg", width=2000)
+    ayang = st.text_input("nama orang diatas siapa 🫵😠")
     if ayang == "Eunchae":
-                          tab1.write("bener 🥰")
+                          st.write("bener 🥰")
     elif ayang == "":
-        tab1.write("Tebak")
+        st.write("Tebak")
     else:
-                          tab1.write("salah 😡")
+                          st.write("salah 😡")
 
-    tab1.image_input
+    st.image_input
     
-elif menu == "Aplikasi Ganjil Genap":
+with tab2:
     st.header("Aplikasi Ganjil Genap")
           
     angka = st.number_input("Tulis sebuah angka:", value=0, step=1)
@@ -60,6 +60,3 @@ elif menu == "Games":
         st.write(skibidi)
     elif idle:
         st.write(slebew)
-
-
-
