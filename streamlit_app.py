@@ -64,6 +64,6 @@ with tab5:
     st.title("TESTING")
 
     col1, col2 = st.columns(2)
-    col1.write("This is column 1")
-    col2.write("This is column 2")
+    with col1:
+        st.camera_input("Take a picture")
           
