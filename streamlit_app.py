@@ -61,8 +61,7 @@ with tab4:
         st.write(slebew)
 
 with tab5:
-st.set_page_config(page_title="Chat App", layout="centered")
-
+    
 st.title("💬 Chat App Sederhana")
 
 # Simpan riwayat chat dalam session state
