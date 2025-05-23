@@ -33,7 +33,7 @@ with tab3:
     mantap4 = st.checkbox("menjadi presiden Indonesia")
 
     
-    if mantap1, mantap2, mantap3, mantap4:
+    if mantap1 and mantap2 and mantap3 and mantap4:
               st.write("mantap")
     else:
       pass
