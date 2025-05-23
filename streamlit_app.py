@@ -27,10 +27,7 @@ with tab2:
 
 with tab3:
     st.header("To Do List")
-    mantap = st.checkbox("Ngerjain tugas")
-    mantap = st.checkbox("ngedate sama ayang")
-    mantap = st.checkbox("menyelamatkan dunia")
-    mantap = st.checkbox("menjadi presiden Indonesia")
+    mantap = st.checkbox("Ngerjain tugas", "ngedate sama ayang", "menyelamatkan dunia", "menjadi presiden Indonesia")
 
     if mantap:
               st.write("mantap")
