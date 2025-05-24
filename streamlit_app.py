@@ -65,7 +65,7 @@ with tab5:
 
     gambar = st.camera_input("jepret")
 
-    random = randint(1, 100)
+    random = st.write(1, 100)
 if 'button' not in st.session_state:
     st.session_state.button = False
 
@@ -75,7 +75,7 @@ def click_button():
 st.button('tes', on_click=click_button)
 
 if st.session_state.button:
-    st.write('random')
+    random
 else:
     st.write('Button is off!')
 
