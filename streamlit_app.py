@@ -63,24 +63,20 @@ with tab4:
 with tab5:
     st.title("TESTING")
 
-    st.button("Click me")
-st.checkbox("I agree")
-st.feedback("thumbs")
-st.pills("Tags", ["Sports", "Politics"])
-st.radio("Pick one", ["cats", "dogs"])
-st.segmented_control("Filter", ["Open", "Closed"])
-st.toggle("Enable")
-st.selectbox("Pick one", ["cats", "dogs"])
-st.multiselect("Buy", ["milk", "apples", "potatoes"])
-st.slider("Pick a number", 0, 100)
-st.select_slider("Pick a size", ["S", "M", "L"])
-st.text_input("First name")
-st.number_input("Pick a number", 0, 10)
-st.text_area("Text to translate")
-st.date_input("Your birthday")
-st.time_input("Meeting time")
-st.file_uploader("Upload a CSV")
-st.audio_input("Record a voice message")
-st.camera_input("Take a picture")
-st.color_picker("Pick a color")
+    gambar = st.camera_input("jepret")
+
+if 'button' not in st.session_state:
+    st.session_state.button = False
+
+def click_button():
+    st.session_state.button = not st.session_state.button
+
+st.button('Click me', on_click=click_button)
+
+if st.session_state.button:
+    # The message and nested widget will remain on the page
+    st.write('Button is on!')
+    st.slider('Select a value')
+else:
+    st.write('Button is off!')
 
