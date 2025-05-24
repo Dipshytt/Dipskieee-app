@@ -8,11 +8,11 @@ with tab1:
     st.write("Selamat datang di halaman utama.")
     st.write( "Jika ingin keinginan terwujud, perbanyaklah bersujud 🤘😝🤘")
     st.write("[Coba Klik](https://youtu.be/2Iyj3CBsxTk)")
-    st.image("IMG_20250421_152717_503.jpg", width=2000)
-    ayang = st.text_input("nama orang diatas siapa 🫵😠")
-    if ayang == "Eunchae":
+    st.imagr("IMG_20250522_091017.jpg", width=2000)
+    Botak = st.text_input("nama orang diatas siapa 🫵😠")
+    if Botak == "GANIBOTAK":
                           st.write("bener 🥰")
-    elif ayang == "":
+    elif Botak == "":
         st.write("Tebak")
     else:
                           st.write("salah 😡")
