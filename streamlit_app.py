@@ -67,16 +67,16 @@ with tab5:
     gambar = st.camera_input("jepret")
 
    
-if 'button' not in st.session_state:
-    st.session_state.button = False
+    if 'button' not in st.session_state:
+       st.session_state.button = False
 
-def click_button():
-    st.session_state.button = not st.session_state.button
+    def click_button():
+       st.session_state.button = not st.session_state.button
 
-st.button('tes', on_click=click_button)
+    st.button('tes', on_click=click_button)
 
-if st.session_state.button:
-    st.write('mantap')
-else:
-    st.write('Button is off!')
+    if st.session_state.button:
+       st.write('mantap')
+    else:
+       st.write('Button is off!')
 
