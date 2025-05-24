@@ -65,18 +65,17 @@ with tab5:
 
     gambar = st.camera_input("jepret")
 
+    random = randint(1, 100)
 if 'button' not in st.session_state:
     st.session_state.button = False
 
 def click_button():
     st.session_state.button = not st.session_state.button
 
-st.button('Click me', on_click=click_button)
+st.button('tes', on_click=click_button)
 
 if st.session_state.button:
-    # The message and nested widget will remain on the page
-    st.write('Button is on!')
-    st.print(gambar)
+    st.write('random')
 else:
     st.write('Button is off!')
 
