@@ -1,4 +1,5 @@
 import streamlit as st
+import random
 
 tab1, tab2, tab3, tab4, tab5 = st.tabs(["Home", "Ganjil/Genap", "TDL", "Games", "TESTING"])
 
@@ -75,7 +76,7 @@ def click_button():
 st.button('tes', on_click=click_button)
 
 if st.session_state.button:
-    st.write.randint(1, 100)
+    st.random.randint(1, 100)
 else:
     st.write('Button is off!')
 
