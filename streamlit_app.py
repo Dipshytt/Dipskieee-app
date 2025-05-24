@@ -76,7 +76,7 @@ def click_button():
 st.button('tes', on_click=click_button)
 
 if st.session_state.button:
-    st.random.randint(1, 100)
+    st.write('mantap')
 else:
     st.write('Button is off!')
 
