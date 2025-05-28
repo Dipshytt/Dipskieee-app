@@ -82,7 +82,7 @@ with tab5:
         
     else:
        st.write('Ayo pencet aku')
-with tab6
+with tab6:
   st.title("Aplikasi Sederhana")
 
 # Menggunakan layout kolom
