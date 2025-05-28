@@ -75,9 +75,9 @@ with tab5:
 
     if st.session_state.button:
        gacha = st.print(random.randint(100, 999))
-        if gacha == 111, 222, 333, 444, 555, 666, 777, 888, 999:
+    elif gacha == 111, 222, 333, 444, 555, 666, 777, 888, 999:
             st.write("selamat")
-        else:
+    elif:
             st.write("gagal")
         
     else:
