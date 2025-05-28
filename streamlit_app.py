@@ -64,8 +64,6 @@ with tab4:
 with tab5:
     st.title("TESTING")
 
-    gambar = st.camera_input("jepret")
-
    
     if 'button' not in st.session_state:
        st.session_state.button = False
@@ -73,10 +71,15 @@ with tab5:
     def click_button():
        st.session_state.button = not st.session_state.button
 
-    st.button('tes', on_click=click_button)
+    st.button('tes keberuntungan', on_click=click_button)
 
     if st.session_state.button:
-       st.write('mantap')
+       gacha = st.print(random.randint(100, 999))
+        if gacha == 111, 222, 333, 444, 555, 666, 777, 888, 999:
+            st.write("selamat")
+        else:
+            st.write("gagal")
+        
     else:
-       st.write('Button is off!')
+       st.write('Ayo pencet aku')
 
