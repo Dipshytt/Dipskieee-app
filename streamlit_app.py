@@ -48,7 +48,7 @@ with tab4:
     skibidi = ("ayo coba lagi")
     slebew = ("Ayo Mulai")
 
-    berhasil = random.randint(max_value=1, min_value=100)
+    berhasil = st.random.randint(1, 100)
     idle = (nomor == 0)
     gagal = (nomor != 'berhasil' and nomor != 0)
 
