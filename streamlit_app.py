@@ -72,12 +72,12 @@ with tab5:
        st.session_state.button = not st.session_state.button
 
     st.button('tes keberuntungan', on_click=click_button)
-
+    hoki = (111, 222, 333, 444, 555, 666, 777, 888, 999)
     if st.session_state.button:
        gacha = st.print(random.randint(100, 999))
-    elif gacha == 111, 222, 333, 444, 555, 666, 777, 888, 999:
+    elif gacha == hoki:
             st.write("selamat")
-    elif:
+    elif gacha != hoki:
             st.write("gagal")
         
     else:
