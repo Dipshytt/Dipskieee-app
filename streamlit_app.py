@@ -74,7 +74,7 @@ with tab5:
     st.button('tes keberuntungan', on_click=click_button)
     hoki = (111, 222, 333, 444, 555, 666, 777, 888, 999)
     if st.session_state.button:
-       gacha = st.write(random.randint(100, 999), %)
+       gacha = st.write(random.randint(100, 999))
        if gacha == hoki:
             st.write("hoki bet anjay")
        elif gacha != hoki:
