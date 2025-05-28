@@ -47,9 +47,8 @@ with tab4:
     sigma = ("selamat!!")
     skibidi = ("ayo coba lagi")
     slebew = ("Ayo Mulai")
-    sekem = random.randint(1, 10)
 
-    berhasil = (nomor == 'sekem')
+    berhasil = (nomor == random.randint(1,10))
     idle = (nomor == 0)
     gagal = (nomor != 'berhasil' and nomor != 0)
 
